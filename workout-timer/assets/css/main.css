@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:30px;
+    font-family: 'digital-7';
+}
+
+@font-face {
+    font-family: "digital-7";
+    src: url("../fonts/digital-7.ttf") format("truetype");
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:white;
+    padding: 20px;
+}
+
+.button{
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid #02c3bd;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.button img{
+    height: 30px;
+    margin-right: 20px;
+}
+
+.button span{
+    border: none;
+    width: 45px;
+    text-align: center;
+    margin-right: 5px; 
+}
+
+.active{
+    background-color: #02c3bd;
+    color: white;
+}
+
+
+
+
+
