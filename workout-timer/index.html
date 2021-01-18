@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout-Timer</title>
-    <!--<link rel="shortcut icon" type="image/x-icon" href="assets/icons/timer.svg">-->
     <link rel="icon" href="assets/icons/timer.svg">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+
     <div class="container">
         
-        <div class="button" id="btn60">
-            <img class="timer" src="assets/icons/timer.svg">
-            <span>60</span>
+        <div id="timer" class="setting-container">
+            <object class="greenIcon" type="image/svg+xml" data="assets/icons/muscles.svg"></object>
+            <div class="btn-arith" data-arith="-5">-</div>
+            <div class="counter" id="timerVal" data-counter="60">60</div>
+            <div class="btn-arith" data-arith="5">+</div> 
         </div>
 
-        <div class="button" id="btn45">
-            <img class="timer" src="assets/icons/timer.svg">
-            <span>45</span>
+        <div id="pause" class="setting-container">
+            <object class="greenIcon" type="image/svg+xml" data="assets/icons/coffee.svg"></object>
+            <div class="btn-arith" data-arith="-5">-</div>
+            <div class="counter" id="pauseVal" data-counter="5">5</div>
+            <div class="btn-arith" data-arith="5">+</div> 
         </div>
 
-        <div class="button" id="btn30">
-            <img class="timer" src="assets/icons/timer.svg">
-            <span>30</span>
+        <div class="setting-container">
+            <object class="greenIcon" type="image/svg+xml" data="assets/icons/repeat.svg"></object>
+            <div class="btn-arith" data-arith="-1">-</div>
+            <div class="counter" id="repVal" data-counter="5">5</div>
+            <div class="btn-arith" data-arith="1">+</div> 
         </div>
-   
-     
+
+        <div id="btn-play">
+            <img id="triangle" src="assets/icons/triangle.svg">
+            <img id="square" class="displayNone" src="assets/icons/square.svg">
+        </div>
+  
     </div>
 
     <audio id="beep01" src="assets/audio/beep-01.mp3"></audio>
@@ -36,3 +46,5 @@
     
 </body>
 </html>
+
+<!--svg color filter tool: https://codepen.io/sosuke/pen/Pjoqqp-->

@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-size:30px;
+    font-size:44px;
     font-family: 'digital-7';
 }
 
@@ -16,29 +16,63 @@
     height: 100vh;
     background-color:white;
     padding: 20px;
+    position: relative;
 }
 
-.button{
+.setting-container{
     margin: 40px;
-    padding: 20px;
+    padding: 0 20px 0 20px;
+    height: 80px;
     border: 2px solid #02c3bd;
-    border-radius: 20px;
+    border-radius: 40px 0 0 40px;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content:center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.button img{
-    height: 30px;
-    margin-right: 20px;
+
+.setting-container object{
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 30px;
 }
 
-.button span{
-    border: none;
-    width: 45px;
+.counter{
     text-align: center;
-    margin-right: 5px; 
+    flex: 0 0 50px;
+}
+
+.btn-arith{
+    flex: 1;
+    text-align: center;
+    color:#02c3bd;
+    padding:  20px 0 20px 0;
+}
+
+#btn-play{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: #02c3bd;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    bottom: 60px;
+    left:50%;
+    transform: translateX(-50%); -webkit-transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#triangle{
+    margin-left: 15px;
+    height: 60px;
+}
+
+#square{
+    height: 40px;
 }
 
 .active{
@@ -46,7 +80,18 @@
     color: white;
 }
 
+.displayNone{
+    display: none;
+}
 
+.hidden{
+    visibility: hidden;
+}
 
+.greenIcon{
+    filter: invert(77%) sepia(53%) saturate(6457%) hue-rotate(138deg) brightness(98%) contrast(98%);
+}
 
-
+.whiteIcon{
+    filter: invert(1);
+}
