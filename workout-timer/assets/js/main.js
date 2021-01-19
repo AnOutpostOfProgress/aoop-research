@@ -1,3 +1,10 @@
+const noSleep = new NoSleep();
+
+document.addEventListener('click', function enableNoSleep() {
+  document.removeEventListener('click', enableNoSleep, false);
+  noSleep.enable();
+}, false);
+
 const btnPlay = document.getElementById('btn-play');
 const btnArith = document.querySelectorAll('.btn-arith');
 
